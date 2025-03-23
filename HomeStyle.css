@@ -1,0 +1,200 @@
+body, h1, p {
+    margin: 0px;
+    font-family: "Albert Sans", sans-serif;
+}
+/* main {
+    margin-left: 50px;
+    margin-right: 50px;
+} */
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    
+}
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+}
+.navbar a:hover {
+    background: linear-gradient(45deg, rgb(247, 144, 200), rgb(249, 142, 249));
+}
+.navbar li {
+    float: right;
+    margin: 0 10px;
+}
+
+.navbar .Home {
+    background: linear-gradient(45deg, rgb(247, 144, 200), rgb(249, 142, 249));
+    color: rgb(0, 0, 0); /* White text */
+    border-radius: 15px;
+    width: 100px;
+}
+.navbar .signUp {
+    background: linear-gradient(45deg, rgb(247, 144, 200), rgb(249, 142, 249));
+    color: white; /* White text */
+    font-weight: bold;
+    border-radius: 15px;
+    width: 100px;
+}
+.MainCover {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(Images/mainnn.jpg);
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 50px;
+}
+
+.MainCover .title1 {
+    font-size: 8em;
+    color: white;
+    font-family: 'Lovelo 900', sans-serif;
+    display: inline-block;
+    text-shadow: 10px 8px #fa59a9;
+}
+
+.MainCover .title2 {
+    font-size: 8em;
+    color: white;
+    font-family: 'Gistesy', sans-serif;
+    display: inline-block;
+    text-shadow: 10px 8px #e45cd0;
+}
+
+.Parag {
+    padding-left: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(0, 0, 0)
+}
+
+.shop-now-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, rgb(239, 201, 222), rgb(255, 106, 255));
+    color: rgb(0, 0, 0);
+    font-size: 1.0em;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.shop-now-btn:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 5px 15px rgba(255, 106, 255, 0.5); /* Glowing effect */
+}
+
+.MainHeading, .SecondHeading {
+    font-family: "Righteous", sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* SHOP BY CATEGORY */
+.GRAYbg {
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(238, 237, 237);
+}
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.category {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    padding: 10px 0;
+    font-weight: bold;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+/* CONTACT US FOOTER */
+footer {
+    background-color: black;
+    color:white;
+}
+.newsletter {
+    text-align: left;
+}
+
+.newsletter input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 5px;
+    width: 80%;
+    outline: none;
+}
+
+.newsletter input[type="email"]::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.subscribe {
+    margin-top: 10px;
+}
+
+.subscribe-button {
+    margin-top: 10px;
+    background-color: pink;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+}
+
+.subscribe-button:hover {
+    background-color: #ff99cc;
+}

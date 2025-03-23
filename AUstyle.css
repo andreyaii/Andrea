@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+ 
+nav {
+    background-color: black;
+    padding: 15px;
+}
+ 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+ 
+nav ul li {
+    margin: 0 15px;
+}
+ 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+ 
+nav ul li a:hover {
+    color: pink;
+}
+ 
+header {
+    padding: 50px;
+    text-align: left;
+}
+ 
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+ 
+section {
+    padding: 50px;
+}
+ 
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+ 
+footer table {
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+ 
+.footer-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 15px;
+}
+ 
+footer h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+ 
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+ 
+footer ul li {
+    margin-bottom: 5px;
+}
+ 
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+ 
+footer ul li a:hover {
+    color: pink;
+}
+ 
+footer p {
+    font-size: 14px;
+    font-weight: normal;
+}
+ 
+.subscribe {
+    margin-top: 10px;
+}
+ 
+.payment-icons {
+    text-align: left;
+}
+ 
+.payment-icons img {
+    width: 40px;
+    height: auto;
+    margin-right: 5px;
+}
+ 
+.footer-bottom {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 14px;
+}
+ 

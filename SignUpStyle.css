@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    background-image: linear-gradient(45deg, rgb(247, 144, 200), rgb(183, 1, 183));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Albert Sans", sans-serif;
+    
+
+}
+h1 {
+    font-family: "Righteous", sans-serif;
+    font-size: 2.8em;
+    font-weight: 500px;
+    font-style: normal;
+    color: rgb(230, 5, 191);
+    text-shadow: 5px 5px #f7c0e1;
+}
+
+.container {
+    width: 800px; 
+    height: 500px;
+    margin: 0 auto; 
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 10px 8px #352e2e;
+    display: flex;
+}
+.left-cont {
+    width: 70%;
+    background-image: url('Images/login.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 15px 0px 0px 15px;
+}
+.right-cont {
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    width: 100%;
+    height: 25px;
+
+}
+
+button:hover {
+    background-color: lightpink;
+}
