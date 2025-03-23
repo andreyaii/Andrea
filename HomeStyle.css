@@ -1,200 +1,273 @@
+/* Base Styles */
 body, h1, p {
     margin: 0px;
     font-family: "Albert Sans", sans-serif;
 }
-/* main {
-    margin-left: 50px;
-    margin-right: 50px;
-} */
+
+/* Enhanced Navbar */
 .navbar ul {
     list-style-type: none;
-    background-color: rgb(255, 255, 255);
-    padding: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px 20px;
+    margin: 0;
     overflow: hidden;
-    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+
 .navbar a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 15px;
+    padding: 12px 20px;
     display: block;
     text-align: center;
-    border-radius: 15px;
-}
-.navbar a:hover {
-    background: linear-gradient(45deg, rgb(247, 144, 200), rgb(249, 142, 249));
-}
-.navbar li {
-    float: right;
-    margin: 0 10px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
 }
 
-.navbar .Home {
+.navbar a:hover {
     background: linear-gradient(45deg, rgb(247, 144, 200), rgb(249, 142, 249));
-    color: rgb(0, 0, 0); /* White text */
-    border-radius: 15px;
-    width: 100px;
+    color: white;
 }
-.navbar .signUp {
+
+.navbar li {
+    float: right;
+    margin: 0 8px;
+}
+
+.navbar .Home, .navbar .signUp {
     background: linear-gradient(45deg, rgb(247, 144, 200), rgb(249, 142, 249));
-    color: white; /* White text */
-    font-weight: bold;
-    border-radius: 15px;
+    color: white;
     width: 100px;
+    transition: all 0.3s ease;
 }
+
+.navbar .Home:hover, .navbar .signUp:hover {
+    filter: brightness(110%);
+}
+
+/* Enhanced Main Cover */
 .MainCover {
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     background-image: url(Images/mainnn.jpg);
-    background-size: cover; /* Ensures the image covers the div */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.MainCover .title1 {
-    font-size: 8em;
+.MainCover .title1, .MainCover .title2 {
+    font-size: 6em;
     color: white;
-    font-family: 'Lovelo 900', sans-serif;
-    display: inline-block;
-    text-shadow: 10px 8px #fa59a9;
+    text-shadow: 8px 6px rgba(250, 89, 169, 0.7);
+    line-height: 1.1;
 }
 
-.MainCover .title2 {
-    font-size: 8em;
-    color: white;
-    font-family: 'Gistesy', sans-serif;
-    display: inline-block;
-    text-shadow: 10px 8px #e45cd0;
-}
+.MainCover .title1 { font-family: 'Lovelo 900', sans-serif; }
+.MainCover .title2 { font-family: 'Gistesy', sans-serif; }
 
 .Parag {
-    padding-left: 100px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 24px;
     font-weight: 600;
-    color:rgb(0, 0, 0)
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-top: 20px;
 }
 
 .shop-now-btn {
-    display: inline-block;
     background: linear-gradient(45deg, rgb(239, 201, 222), rgb(255, 106, 255));
     color: rgb(0, 0, 0);
-    font-size: 1.0em;
-    padding: 10px 20px;
-    border-radius: 30px;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: 400;
-    margin-top: 20px;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.shop-now-btn:hover {
-    transform: scale(1.1); /* Slight zoom effect */
-    box-shadow: 0px 5px 15px rgba(255, 106, 255, 0.5); /* Glowing effect */
+    font-weight: 600;
+    margin-top: 30px;
+    width: 220px;
+    transition: all 0.3s ease;
 }
 
+.shop-now-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 106, 255, 0.6);
+}
+
+/* Headings */
 .MainHeading, .SecondHeading {
     font-family: "Righteous", sans-serif;
-    font-weight: 100;
-    font-size: 2.5em;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 2.8em;
+    margin: 40px 50px;
+    color: #333;
 }
 
-/* SHOP BY CATEGORY */
+/* Category Section */
 .GRAYbg {
     width: 100vw;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 40px 0;
     background-color: rgb(238, 237, 237);
 }
+
 .category-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 10px;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .category {
     position: relative;
-    width: 250px;
-    height: 300px;
-    border-radius: 15px;
+    width: 280px;
+    height: 340px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    text-decoration: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
 }
 
 .category:hover {
-    transform: scale(1.1);
-}
-
-.category img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
 }
 
 .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
     width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 1.8em;
-    padding: 10px 0;
-    font-weight: bold;
-    font-family: 'Albert Sans', sans-serif;
+    height: 100%;
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    transition: all 0.3s ease;
 }
 
-/* CONTACT US FOOTER */
-footer {
-    background-color: black;
-    color:white;
+.category:hover .overlay {
+    background: rgba(0, 0, 0, 0.6);
 }
-.newsletter {
-    text-align: left;
+
+/* Enhanced Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 60px 40px 20px;
+    font-size: 14px;
+}
+
+footer table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff99cc;
 }
 
 .newsletter input[type="email"] {
+    width: 100%;
+    max-width: 250px;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid #fff;
     background: transparent;
     color: white;
-    padding: 5px;
-    width: 80%;
-    outline: none;
+    padding: 8px 0;
+    margin: 10px 0;
+    transition: border-color 0.3s ease;
 }
 
-.newsletter input[type="email"]::placeholder {
-    color: white;
-    opacity: 0.7;
-}
-
-.subscribe {
-    margin-top: 10px;
+.newsletter input[type="email"]:focus {
+    border-color: #ff99cc;
 }
 
 .subscribe-button {
-    margin-top: 10px;
-    background-color: pink;
-    color: black;
-    border: none;
-    padding: 8px 15px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 15px;
+    background: linear-gradient(45deg, #ff99cc, #ff66b3);
+    color: white;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 25px;
+    margin-top: 15px;
 }
 
 .subscribe-button:hover {
-    background-color: #ff99cc;
+    background: linear-gradient(45deg, #ff66b3, #ff99cc);
+    transform: translateY(-2px);
 }
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+}
+
+.payment-icons img {
+    width: 40px;
+    margin: 0 10px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.payment-icons img:hover {
+    filter: grayscale(0%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .MainCover .title1, .MainCover .title2 {
+        font-size: 3.5em;
+    }
+    
+    .navbar li {
+        float: none;
+        display: inline-block;
+    }
+    
+    .category {
+        width: 45%;
+    }
+    
+    footer table {
+        display: block;
+    }
+    
+    footer td {
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
+/*
+git add 
+git commit -m "message nimo"
+git push
+*/
